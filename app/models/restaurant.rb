@@ -5,11 +5,11 @@ class Restaurant < ApplicationRecord
         dependent: :destroy
   validates :name, length: { minimum: 3 }, uniqueness: true
 
-  def build_review(review_params, current_user)
-    review = reviews.new(review_params)
-    review.user = current_user
-    review
-  end
+  # def build_review(review_params, current_user)
+  #   review = reviews.new(review_params)
+  #   review.user = current_user
+  #   review
+  # end
 
   has_many :reviews do
     def build_with_user(attributes = {}, user)
