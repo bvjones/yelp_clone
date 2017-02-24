@@ -11,6 +11,7 @@ group :test do
   gem "rspec-collection_matchers"
 end
 
+gem 'paperclip'
 gem 'shoulda'
 gem 'omniauth-facebook'
 gem 'dotenv-rails'
